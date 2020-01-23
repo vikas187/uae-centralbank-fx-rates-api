@@ -8,6 +8,10 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "request": "^2.88.0"
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
   }
 }
