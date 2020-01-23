@@ -15,7 +15,7 @@ node .
 ```
 
 ## Consuming
-https://uae-fx.services.roaa.tech/
+https://uae-fx-services.roaa.tech/
 
 ## License
 [MIT](LICENSE)
