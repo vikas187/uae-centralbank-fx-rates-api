@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "UAE Central Bank Foreign Exchange Rates API",
   "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
   "repository": "https://github.com/roaatech/uae-centralbank-fx-rates-api",
   "author": "Muhannad Shelleh",
   "license": "MIT",

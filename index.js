@@ -5,6 +5,7 @@ const request = require('request-promise');
 const cheerio = require('cheerio');
 const moment = require('moment');
 const app = express();
+const port = process.env.PORT || 8081;
 
 app.get('/', async function handle(req, res) {
     try {
@@ -29,7 +30,7 @@ app.get('/', async function handle(req, res) {
     }
 });
 
-app.listen('8081');
+app.listen(port);
 
 console.log('Listing to port 8081');
 
