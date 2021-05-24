@@ -15,7 +15,7 @@ app.get('/', async function handle(req, res) {
         const html = await request.get(url);
         const $ = cheerio.load(html);
         const records = $("#ratesDateTable tbody tr td");
-        const date = moment($($("#ratesDatePicker > h3 > span > span")[0]).text().substring(5) + 'T00:00:00+04:00', 'DD-MM-YYYY').format('YYYY-MM-DD');
+        const date = moment($($("#ratesDatePicker > h3 > span > span")[0]).text().substring(4).trim() + 'T00:00:00+04:00', 'DD-MM-YYYY').format('YYYY-MM-DD');
         for (let i = 0; i < records.length; i++) {
             const currency = $(records[i]).text();
             const rate = parseFloat($(records[i + 1]).text());
