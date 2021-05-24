@@ -23,7 +23,7 @@ app.get('/', async function handle(req, res) {
             const key = (ref[currency] || {}).code || currency;
             rates[key] = { currency, code: null, ...ref[currency], rate };
         }
-        res.json({ url, reference: 'AED', 'note': 'GST Timezone', date, rates, 'repo': 'https://github.com/roaatech/uae-centralbank-fx-rates-api' });
+        res.json({ url, reference: 'AED', 'note': 'GST Timezone', date, rates });
 
     } catch (e) {
         res.json({ success: false, error: JSON.stringify(e) }).status(500).send();
