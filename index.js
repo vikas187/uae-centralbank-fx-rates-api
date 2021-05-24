@@ -23,6 +23,7 @@ app.get('/', async function handle(req, res) {
             const key = (ref[currency] || {}).code || currency;
             rates[key] = { currency, code: null, ...ref[currency], rate };
         }
+        console.log(rates);
         res.json({ url, reference: 'AED', 'note': 'GST Timezone', date, rates });
 
     } catch (e) {
